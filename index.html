@@ -386,6 +386,19 @@
     /* ─── SELECTION ─── */
     ::selection { background: rgba(201,168,76,.25); }
     :focus-visible { outline: 1.5px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+
+    /* Logo Responsif */
+.logo-img {
+  height: clamp(40px, 8vw, 56px);
+  width: auto;
+  filter: drop-shadow(0 0 18px rgba(201,168,76,0.25));
+  transition: filter 0.3s ease;
+}
+.logo-img:hover {
+  filter: drop-shadow(0 0 24px rgba(201,168,76,0.45));
+}
+
+    
   </style>
 
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
